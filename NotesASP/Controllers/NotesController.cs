@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
+[Authorize]
 [Route("api/notes")]
 [ApiController]
 public class NotesController : ControllerBase
