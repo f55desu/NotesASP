@@ -6,3 +6,5 @@ NotesASP/obj
 NotesASP/NotesASP.csproj.user
 NotesTestProject/bin
 NotesTestProject/obj
+NotesService/bin
+NotesService/obj

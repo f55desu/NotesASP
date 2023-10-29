@@ -1,8 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-
-public class NoteService : INoteService
+﻿public class NoteService : INoteService
 {
     private List<NoteDto> _notes = new List<NoteDto>();
     private int _nextNoteId = 1;

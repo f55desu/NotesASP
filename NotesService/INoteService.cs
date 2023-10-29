@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-
-public interface INoteService
+﻿public interface INoteService
 {
     IEnumerable<NoteDto> GetNotes();
     NoteDto GetNoteById(int id);

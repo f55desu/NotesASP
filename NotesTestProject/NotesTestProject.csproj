@@ -25,6 +25,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\NotesASP\NotesASP.csproj" />
+    <ProjectReference Include="..\NotesService\NotesService.csproj" />
   </ItemGroup>
 
 </Project>
