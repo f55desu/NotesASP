@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34018.315
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotesASP", "NotesASP\NotesASP.csproj", "{C6737514-85C8-484E-9807-728ACC8D2173}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotesTestProject", "NotesTestProject\NotesTestProject.csproj", "{4226B83D-8A1C-4193-9115-1EA75C5DAFFF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C6737514-85C8-484E-9807-728ACC8D2173}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6737514-85C8-484E-9807-728ACC8D2173}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6737514-85C8-484E-9807-728ACC8D2173}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4226B83D-8A1C-4193-9115-1EA75C5DAFFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4226B83D-8A1C-4193-9115-1EA75C5DAFFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4226B83D-8A1C-4193-9115-1EA75C5DAFFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4226B83D-8A1C-4193-9115-1EA75C5DAFFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

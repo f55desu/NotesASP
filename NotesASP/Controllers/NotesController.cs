@@ -6,9 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 [ApiController]
 public class NotesController : ControllerBase
 {
-    private readonly INoteRepository _noteRepository;
+    private readonly INoteService _noteRepository;
 
-    public NotesController(INoteRepository noteRepository)
+    public NotesController(INoteService noteRepository)
     {
         _noteRepository = noteRepository;
     }
@@ -21,7 +21,7 @@ public class NotesController : ControllerBase
     }
 
     [HttpGet("{id}")]
-    public IActionResult GetNote(int id)
+    public IActionResult GetNoteById(int id)
     {
         var note = _noteRepository.GetNoteById(id);
         if (note == null)
@@ -39,8 +39,13 @@ public class NotesController : ControllerBase
             return BadRequest();
         }
 
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
+        }
+
         var note = _noteRepository.CreateNote(noteDto);
-        return CreatedAtAction(nameof(GetNote), new { id = note.Id }, note);
+        return CreatedAtAction(nameof(GetNoteById), new { id = note.Id }, note);
     }
 
     [HttpPut("{id}")]

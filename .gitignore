@@ -1,4 +1,8 @@
+.gitignore
 .vs
 .github
 NotesASP/bin
 NotesASP/obj
+NotesASP/NotesASP.csproj.user
+NotesTestProject/bin
+NotesTestProject/obj

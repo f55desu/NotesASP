@@ -2,14 +2,13 @@
 using System;
 using System.Collections.Generic;
 
-public class NoteRepository : INoteRepository
+public class NoteService : INoteService
 {
     private List<NoteDto> _notes = new List<NoteDto>();
     private int _nextNoteId = 1;
 
-    public NoteRepository()
+    public NoteService()
     {
-        // Здесь вы можете загрузить заметки из базы данных или начать с пустого списка.
     }
 
     public IEnumerable<NoteDto> GetNotes()
